@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-import { useState,useReducer } from 'react';
-import "./index.css";
-import Button from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Counter from './components/Counter';
-
-
-
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Body from "./components/Body";
+import { useState } from "react";
 function App() {
- 
+  const [deger, setDeger] = useState(0);
   return (
-    <>
-    <Counter>
-
-    </Counter>
-    </>
-    
-    
-
+    <div className="App">
+      <button
+        onClick={() => {
+          setDeger(deger + 1);
+        }}
+      >
+        Arttır
+      </button>
+      <h3>{deger}</h3>
+      <button
+        onClick={() => {
+          setDeger(deger - 1);
+        }}
+      >
+        Azalt
+      </button>
+      <button onClick={() => setDeger(0)}>Sıfırla</button>
+    </div>
   );
 }
 
