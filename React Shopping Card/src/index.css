@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+.mycard {
+  display: flex;
+  margin-left: 10px;
+}
+.mycard p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.mycard h4 {
+  color: orangered;
+  font-weight: lighter;
+}
+.main {
+  width: 90vw;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.itemsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
